@@ -1,0 +1,40 @@
+# Environment variables
+/.env
+
+# IDE files
+/.idea/
+/.vscode/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Log files
+/logs/*
+!.gitkeep
+
+# Data files
+/data/
+*.db
+*.csv
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Claude files
+*.claude*
+
+# Demand file
+DEMAND.md
+
+# Test files
+tests/tests/

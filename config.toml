@@ -1,0 +1,29 @@
+[database]
+[database.postgresSQL]
+db_url = "localhost:5432"
+db_name = "stocks_db_dev"
+# test_db = "stocks_db_test"
+USER = ""
+PASSWORD = ""
+
+[database.dml_config]
+batch_size = 10000
+
+[stocks_info]
+start_date = '2025-01-01'
+
+[logging]
+level = "INFO"
+file = "logs/stocks_strategy.log"
+
+[schedule]
+# 每月第一个星期一更新股票基本信息
+monthly_update = "0 9 * * 1"
+# 每天17点获取日涨跌数据
+daily_market_update = "0 17 * * 1-5"
+# 每天18点计算指标
+daily_indicator_calculation = "0 18 * * 1-5"
+
+[api]
+# adata API配置
+timeout = 30
