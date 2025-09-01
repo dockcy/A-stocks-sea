@@ -14,7 +14,7 @@ start_date = '2025-01-01'
 
 [logging]
 level = "INFO"
-file = "logs/stocks_strategy.log"
+file = "logs/stocks_strategy"
 
 [schedule]
 # 每月第一个星期一更新股票基本信息
@@ -27,3 +27,7 @@ daily_indicator_calculation = "0 18 * * 1-5"
 [api]
 # adata API配置
 timeout = 30
+
+[network]
+# 网络请求配置
+concurrency_limit = 3
